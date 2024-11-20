@@ -1,0 +1,17 @@
+{
+  "name": "homebridge-my-plugin",
+  "version": "1.0.0",
+  "description": "A simple Homebridge plugin for controlling a light.",
+  "main": "index.js",
+  "dependencies": {
+    "homebridge": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homebridge": {
+    "accessory": "MyLight"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
