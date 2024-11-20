@@ -1,17 +1,32 @@
 {
-  "name": "homebridge-my-plugin",
-  "version": "1.0.0",
-  "description": "A simple Homebridge plugin for controlling a light.",
-  "main": "index.js",
-  "dependencies": {
-    "homebridge": "^1.0.0"
+  "name": "homebridge-chromecast-television",
+  "version": "2.0.10",
+  "description": "Expose Chromecast devices in Homebridge as Television accessory",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "author": "Dobriyan Benov",
+  "repository": "git@github.com:benov84/homebridge-chromecast-television.git",
+  "bugs": {
+    "url": "https://github.com/benov84/homebridge-chromecast-television/issues"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=8.0.0",
+    "homebridge": ">=0.4.0"
   },
-  "homebridge": {
-    "accessory": "MyLight"
+  "dependencies": {
+    "castv2-client": "^1.2.0",
+    "mdns": "^2.3.3"
   },
-  "author": "Your Name",
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .js"
+  },
+  "homepage": "https://github.com/benov84/homebridge-chromecast-television/issues#readme",
+  "main": "index.js"
 }
